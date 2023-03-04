@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background:url("images/bg-intro-desktop.png");
+    background-color: hsl(0, 100%, 74%);
+}
+main{
+    height: 100vh;
+    display: flex;
+    /* margin: 0 auto; */
+    justify-content: center;
+    align-items: center;
+}
+.right
+{
+    display: flex;
+    flex-direction: column;
+}
+form{
+    display:flex;
+    flex-direction: column;
+    background-color: white;
+    padding: .5em;
+    border-radius: .5em;
+
+}
+.left{
+    width: 50%;
+    color: white;
+}
+.right{
+    width: 30%;
+}
+.btn{
+    padding: .9em;
+    
+}
+.right2{
+    margin: .9em 2em;
+}
+span{
+    font-weight: 900;
+}
+.btn-left{
+    background-color: hsl(248, 32%, 49%);
+    margin:.5em 0;
+    border: none;
+    outline: none;
+    border-radius: .5em;
+    color: white;
+}
+input{
+    padding: 1em;
+    margin: 1.5em 2em;
+    border: none;
+    outline-color:greenyellow ;
+}
+.btn-right{
+    background-color: hsl(154, 59%, 51%);
+    border: none;
+    border-radius: .5em;
+    margin: 0em 2em;
+}
+form p a{
+    color: hsl(0, 100%, 74%);
+    text-decoration: none;
+}
+@media(max-width:375px){
+    body{
+        background:url("images/bg-intro-mobile.png");
+        background-color: hsl(0, 100%, 74%);
+    }
+    main{
+        flex-direction: column;
+    }
+    .right{
+        width: 90%;
+    }
+    .left{
+        width: 90%;
+    }
+}
